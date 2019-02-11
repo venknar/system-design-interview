@@ -1,12 +1,10 @@
 [![logo](imgs/systemcycle.png)](https://github.com/checkcheckzz/system-design-interview)
 
-> How to prepare system design questions for IT company
+> How to prepare system design questions for an IT company
 
-System design is a very broad topic. Even a software engineer with many years of working experience at top IT company may not be an expert
-on system design. If you want to become an expert, you need to read many books, articles, and solve real large scale system design problems.
+System design is a very broad topic. Even a software engineer with many years of working experience at a top IT company may not be an expert on system design. If you want to become an expert, you need to read many books, articles, and solve real large scale system design problems.
 
-This repository only teaches you to handle the system design interview with a systematic approach in a short time. 
-You can dive into each topic if you have time. Of course, welcome to add your thoughts!
+This repository only teaches you how to handle the system design interview with a systematic approach in a short time. You can dive into each topic if you have time. Of course, welcome to add your thoughts!
 
 ## <a name='toc'>Table of Contents</a>
 - [ ] [System Design Interview Tips](#tips)
@@ -17,12 +15,12 @@ You can dive into each topic if you have time. Of course, welcome to add your th
 - [ ] [Good Books](#bk)
 - [ ] [Object Oriented Design](#ood)
 
-###[[⬆]](#toc) <a name='tips'>System Design Interview Tips:</a>
+### [[⬆]](#toc) <a name='tips'>System Design Interview Tips:</a>
 
 **Clarify the constraints and identify the user cases**
 
 Spend a few minutes questioning the interviewer and agreeing on the scope of the system.
-Remember to make sure you know all the requirements the interviewer didn't tell your about in the beginning.
+Remember to make sure you know all the requirements the interviewer didn't tell you about in the beginning.
 
 User cases indicate the main functions of the system, and constraints list the scale of the system such as requests 
 per second, requests types, data written per second, data read per second.
@@ -30,14 +28,14 @@ per second, requests types, data written per second, data read per second.
 **High-level architecture design**
 
 Sketch the important components and the connections between them, but don't go into some details. 
-Usually, a scalable system includes webserver (load balancer), service (service partition), database (master/slave database cluster plug cache).
+Usually, a scalable system includes webserver (load balancer), service (service partition), database (primary/secondary database cluster plug cache).
  
 **Component design**
 
 For each component, you need to write the specific APIs for each component. You may need to finish
 the detailed OOD design for a particular function. You may also need to design the database schema for the database.
 
-###[[⬆]](#toc) <a name='intro'>Basic Knowledge about System Design:</a>
+### [[⬆]](#toc) <a name='intro'>Basic Knowledge about System Design:</a>
 
 Here are some articles about system design related topics.  
 
@@ -46,6 +44,7 @@ Here are some articles about system design related topics.
 * [Scalability for Dummies](http://www.lecloud.net/tagged/scalability)
 * [Scalable Web Architecture and Distributed Systems](http://www.aosabook.org/en/distsys.html)
 * [Numbers Everyone Should Know](http://everythingisdata.wordpress.com/2009/10/17/numbers-everyone-should-know/)
+* [Fallacies of distributed systems](https://pages.cs.wisc.edu/~zuyu/files/fallacies.pdf)
 * [Scalable System Design Patterns](http://horicky.blogspot.com/2010/10/scalable-system-design-patterns.html)
 * [Introduction to Architecting Systems for Scale](http://lethain.com/introduction-to-architecting-systems-for-scale/)
 * [Transactions Across Datacenters](http://snarfed.org/transactions_across_datacenters_io.html)
@@ -59,7 +58,7 @@ Here are some articles about system design related topics.
 Of course, if you want to dive into system related topics, here is a good collection of reading list about [services-engineering](https://github.com/mmcgrana/services-engineering), and
 a good collection of material about [distributed systems](http://dancres.github.io/Pages/).
 
-###[[⬆]](#toc) <a name='blog'>Company Engineering Blogs:</a>
+### [[⬆]](#toc) <a name='blog'>Company Engineering Blogs:</a>
 
 If you are going to have an onsite with a company, you should read their engineering blog. 
 
@@ -82,11 +81,11 @@ If you are going to have an onsite with a company, you should read their enginee
 * [Flickr Code](http://code.flickr.net/)
 * [Instagram Engineering](http://instagram-engineering.tumblr.com/)
 * [Dropbox Tech Blog](https://tech.dropbox.com/)
-* [Cloudera Developer Blog](http://blog.cloudera.com/blog/)
+* [Cloudera Developer Blog](http://blog.cloudera.com/)
 * [Bandcamp Tech](http://bandcamptech.wordpress.com/)
 * [Oyster Tech Blog](http://tech.oyster.com/)
 * [THE REDDIT BLOG](http://www.redditblog.com/)
-* [Groupn Engineering Blog](https://engineering.groupon.com/)
+* [Groupon Engineering Blog](https://engineering.groupon.com/)
 * [Songkick Technology Blog](http://devblog.songkick.com/)
 * [Google Research Blog](http://googleresearch.blogspot.com/)
 * [Pinterest Engineering Blog](http://engineering.pinterest.com/)
@@ -94,8 +93,14 @@ If you are going to have an onsite with a company, you should read their enginee
 * [Bitly Engineering Blog](http://word.bitly.com/)
 * [Uber Engineering Blog ](https://eng.uber.com/)
 * [Godaddy Engineering](http://engineering.godaddy.com/)
+* [Splunk Blog](http://blogs.splunk.com/)
+* [Coursera Engineering Blog](https://building.coursera.org/)
+* [PayPal Engineering Blog](https://www.paypal-engineering.com/)
+* [Nextdoor Engineering Blog](https://engblog.nextdoor.com/)
+* [Booking.com Development Blog](https://blog.booking.com/)
+* [Scalyr Engineering Blog ](https://blog.scalyr.com/)
 
-###[[⬆]](#toc) <a name='system'>Products and Systems:</a>
+### [[⬆]](#toc) <a name='system'>Products and Systems:</a>
 
 The following papers/articles/slides can help you to understand the general design idea of different real products and systems. 
 
@@ -113,7 +118,7 @@ The following papers/articles/slides can help you to understand the general desi
 * [Introduction to Zookeeper](http://www.slideshare.net/sauravhaloi/introduction-to-apache-zookeeper)
 * [Kafka](http://www.slideshare.net/mumrah/kafka-talk-tri-hug)
 * [YouTube Architecture](http://highscalability.com/youtube-architecture)
-* [Scalinig Pinterest](http://highscalability.com/blog/2013/4/15/scaling-pinterest-from-0-to-10s-of-billions-of-page-views-a.html)
+* [Scaling Pinterest](http://highscalability.com/blog/2013/4/15/scaling-pinterest-from-0-to-10s-of-billions-of-page-views-a.html)
 * [Google Architecture](http://highscalability.com/google-architecture)
 * [Scaling Twitter](http://highscalability.com/scaling-twitter-making-twitter-10000-percent-faster)
 * [The WhatsApp Architecture](http://highscalability.com/blog/2014/2/26/the-whatsapp-architecture-facebook-bought-for-19-billion.html)
@@ -129,8 +134,9 @@ The following papers/articles/slides can help you to understand the general desi
 * [ESPN Architecture](http://highscalability.com/blog/2013/11/4/espns-architecture-at-scale-operating-at-100000-duh-nuh-nuhs.html)
 * [Uber Architecture](http://highscalability.com/blog/2015/9/14/how-uber-scales-their-real-time-market-platform.html)
 * [DropBox Design](https://www.youtube.com/watch?v=PE4gwstWhmc)
+* [Splunk Architecture](http://www.splunk.com/view/SP-CAAABF9)
 
-###[[⬆]](#toc) <a name='qs'>Hot Questions and Reference:</a>
+### [[⬆]](#toc) <a name='qs'>Hot Questions and Reference:</a>
 
 There are some good references for each question. The references here are slides and articles. 
 
@@ -165,7 +171,7 @@ Reference:
 
 **Design a function to return the top k requests during past time interval**   
 Reference:  
-* [Efficient Computation of Frequent and Top-k Elements in Data Streams](https://icmi.cs.ucsb.edu/research/tech_reports/reports/2005-23.pdf)
+* [Efficient Computation of Frequent and Top-k Elements in Data Streams](http://www.cse.ust.hk/~raywong/comp5331/References/EfficientComputationOfFrequentAndTop-kElementsInDataStreams.pdf)
 * [An Optimal Strategy for Monitoring Top-k Queries in Streaming Windows](http://davis.wpi.edu/xmdv/docs/EDBT11-diyang.pdf)
 
 **Design an online multiplayer card game**   
@@ -192,9 +198,9 @@ Reference:
 * [How would you implement Google Search?](http://programmers.stackexchange.com/questions/38324/interview-question-how-would-you-implement-google-search)  
 * [Implementing Search Engines](http://www.ardendertat.com/2012/01/11/implementing-search-engines/)
 
-**Design a recommendition system**  
+**Design a recommendation system**  
 Reference:  
-* [Hulu’s Recommendation System](http://tech.hulu.com/blog/2011/09/19/recommendation-system/)  
+* [Hulu’s Recommendation System](http://tech.hulu.com/blog/2011/09/19/recommendation-system.html)  
 * [Recommender Systems](http://ijcai13.org/files/tutorial_slides/td3.pdf)
 
 **Design a tinyurl system**    
@@ -224,15 +230,16 @@ Reference:
 Reference:   
 * [Introduction to Memcached](http://www.slideshare.net/oemebamo/introduction-to-memcached)
 
-###[[⬆]](#toc) <a name='bk'>Good Books:</a>
+### [[⬆]](#toc) <a name='bk'>Good Books:</a>
 
 * [Big Data: Principles and best practices of scalable realtime data systems](http://www.amazon.com/Big-Data-Principles-practices-scalable/dp/1617290343)
 * [Real-Time Analytics: Techniques to Analyze and Visualize Streaming Data](http://www.amazon.com/Real-Time-Analytics-Techniques-Visualize-Streaming/dp/1118837916)
-* [Building Microservices](http://www.amazon.com/Building-Microservices-Sam-Newman/dp/1491950358)
+* [Building Microservices: Designing Fine-Grained Systems](http://www.amazon.com/Building-Microservices-Sam-Newman/dp/1491950358)
+* [Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems](https://www.amazon.com/Designing-Data-Intensive-Applications-Reliable-Maintainable/dp/1449373321)
 
-###[[⬆]](#toc) <a name='ood'>Object Oriented Design:</a>
+### [[⬆]](#toc) <a name='ood'>Object Oriented Design:</a>
 
-####Tips for OOD Interview
+#### Tips for OOD Interview
 
 **Clarify the scenario, write out user cases**
 
@@ -250,7 +257,7 @@ Identify attributes for each class: change noun to variable and action to method
 
 Use design patterns such that it can be reused in multiple applications.
 
-####Useful Websites
+#### Useful Websites
 
 * [101 Design Patterns & Tips for Developers](http://sourcemaking.com/design-patterns-and-tips)
 
